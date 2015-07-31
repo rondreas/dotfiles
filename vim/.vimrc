@@ -8,6 +8,9 @@ execute pathogen#infect()
 " Set UI language "
 set langmenu=en_US.UTF-8
 
+" Hides (m)enu bar, (T)oolbar and (r)ight side scrollbar.
+set go-=m go-=T go-=r
+
 " Removal of bells on errors "
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
