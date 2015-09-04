@@ -31,5 +31,9 @@ if has("gui_running")
 endif
 
 syntax enable
+set number
+
+" Activate filetype detection, loads plugin and indent file for detected language.
+filetype plugin indent on
 
 colorscheme solarized 
