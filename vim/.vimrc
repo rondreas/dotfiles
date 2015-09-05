@@ -5,6 +5,11 @@
 
 execute pathogen#infect()
 
+" PyDoc
+filetype plugin on
+let g:pydoc_cmd = 'python -m pydoc'
+let g:pydoc_open_cmd = 'vsplit'
+
 " Set UI language "
 set langmenu=en_US.UTF-8
 
