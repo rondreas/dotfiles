@@ -5,8 +5,10 @@
 
 execute pathogen#infect()
 
+" Activate filetype detection, loads plugin and indent file for detected language.
+filetype plugin indent on
+
 " PyDoc
-filetype plugin on
 let g:pydoc_cmd = 'python -m pydoc'
 let g:pydoc_open_cmd = 'vsplit'
 
@@ -37,8 +39,5 @@ endif
 
 syntax enable
 set number
-
-" Activate filetype detection, loads plugin and indent file for detected language.
-filetype plugin indent on
 
 colorscheme solarized 
