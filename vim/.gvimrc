@@ -1,1 +1,2 @@
 " GVIM settings "
+colorscheme solarized

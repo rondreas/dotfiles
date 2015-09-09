@@ -40,4 +40,8 @@ endif
 syntax enable
 set number
 
-colorscheme solarized 
+" Highlight to warn about exceedingly long lines.
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
+
+colorscheme desert 

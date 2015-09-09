@@ -6,7 +6,3 @@
 set expandtab
 set shiftwidth=4
 set softtabstop=4
-
-" Highlight to warn about exceedingly long lines.
-highlight ColorColumn ctermbg=magenta
-call matchadd('ColorColumn', '\%81v', 100)
