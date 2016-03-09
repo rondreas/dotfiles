@@ -14,6 +14,7 @@ let g:pydoc_open_cmd = 'vsplit'
 
 " Set UI language "
 set langmenu=en_US.UTF-8
+let g:NERDTreeDirArrows=0
 
 " Hides (m)enu bar, (T)oolbar and (r)ight side scrollbar.
 set go-=m go-=T go-=r
