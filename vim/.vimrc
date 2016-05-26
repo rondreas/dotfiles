@@ -1,9 +1,20 @@
 " Vim Setting
+set nocompatible
+filetype off
 
-" Set VIM to open in user Home Directory
-:cd $HOME
+"set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-execute pathogen#infect()
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'scrooloose/nerdtree'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'fs111/pydoc.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'Valloric/YouCompleteMe'
+
+call vundle#end()
 
 " Activate filetype detection, loads plugin and indent file for detected language.
 filetype plugin indent on
