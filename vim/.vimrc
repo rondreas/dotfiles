@@ -17,7 +17,11 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'fs111/pydoc.vim'
 Plugin 'tpope/vim-surround'
-Plugin 'Valloric/YouCompleteMe'
+
+"Only include YCM for unix systems
+if has ('unix')
+	Plugin 'Valloric/YouCompleteMe'
+endif
 
 call vundle#end()
 
@@ -54,11 +58,16 @@ if has("gui_running")
     endif
 endif
 
+" Attempt setting current directory to file opened.
+set autochdir
 syntax enable
 set number
 
 " Highlight to warn about exceedingly long lines.
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%81v', 100)
+
+let g:ycm_server_keep_logfiles = 1
+let g:ycm_server_log_level = 'debug'
 
 colorscheme desert 
