@@ -14,7 +14,7 @@ endif
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
-Plugin 'altercation/vim-colors-solarized'
+"Plugin 'altercation/vim-colors-solarized'
 Plugin 'fs111/pydoc.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'Valloric/YouCompleteMe'
@@ -56,6 +56,11 @@ endif
 
 syntax enable
 set number
+
+" Create new files from templates
+au BufNewFile *.py 0r ~/.vim/py.skel | let IndentStyle = "py"
+au BufNewFile *.c 0r ~/.vim/c.skel | let IndentStyle = "cpp"
+au BufNewFile *.html 0r ~/.vim/html.skel | let IndentStyle = "html"
 
 " Highlight to warn about exceedingly long lines.
 highlight ColorColumn ctermbg=magenta
