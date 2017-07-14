@@ -14,7 +14,7 @@ endif
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
-"Plugin 'altercation/vim-colors-solarized'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'fs111/pydoc.vim'
 Plugin 'tpope/vim-surround'
 
