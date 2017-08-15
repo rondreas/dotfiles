@@ -64,9 +64,15 @@ syntax enable
 set number
 
 " Create new files from templates
-au BufNewFile *.py 0r ~/.vim/py.skel | let IndentStyle = "py"
-au BufNewFile *.c 0r ~/.vim/c.skel | let IndentStyle = "cpp"
-au BufNewFile *.html 0r ~/.vim/html.skel | let IndentStyle = "html"
+if has('win32')
+	au BufNewFile *.py 0r ~\vimfiles\py.skel | let IndentStyle = "py"
+	au BufNewFile *.c 0r ~\vimfiles\c.skel | let IndentStyle = "cpp"
+	au BufNewFile *.html 0r ~\vimfiles\html.skel | let IndentStyle = "html"
+else
+	au BufNewFile *.py 0r ~/.vim/py.skel | let IndentStyle = "py"
+	au BufNewFile *.c 0r ~/.vim/c.skel | let IndentStyle = "cpp"
+	au BufNewFile *.html 0r ~/.vim/html.skel | let IndentStyle = "html"
+endif
 
 " Highlight to warn about exceedingly long lines.
 highlight ColorColumn ctermbg=magenta
