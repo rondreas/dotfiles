@@ -1,4 +1,4 @@
-vim/.vim/bundle**
+*.swap
 
 " File for Dolphin file browser to tell which files to hide etc.
 .directory
