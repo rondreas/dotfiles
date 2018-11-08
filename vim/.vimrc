@@ -16,7 +16,6 @@ set langmenu=en_US.UTF-8
 " Attempt setting current directory to file opened.
 set autochdir
 syntax enable
-set number
 
 " File Explorer Settings "
 let g:netrw_browse_split = 4    " Open netrw windows in previous window.
