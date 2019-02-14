@@ -14,6 +14,9 @@ Symlink Created for: '/home/user/GitHub/dotfiles/vim/.gvimrc' -> '/home/user/.gv
 import os
 import sys
 
+# TODO Remove existing files if on windows. Can't create symlink otherwise.
+# TODO On windows systems, rename .vim directory to vimfiles
+
 def get_targets():
     """ Get paths for files in subfolder 'vim'. """
 
