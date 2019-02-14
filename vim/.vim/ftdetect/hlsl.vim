@@ -1,1 +1,1 @@
-au BufRead, BufNewFile *.fx, *.fxc, *.fxh, *.hlsl setfiletype hlsl
+au BufRead,BufNewFile *.fx, *.fxc, *.fxh, *.hlsl setfiletype hlsl
