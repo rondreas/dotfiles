@@ -1,1 +1,1 @@
-au BufRead, BufNewFile *.usf set filetype=usf
+au BufRead,BufNewFile *.usf set filetype=usf
