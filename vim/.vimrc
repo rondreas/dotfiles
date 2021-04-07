@@ -28,3 +28,7 @@ highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%81v', 100)
 
 colorscheme desert 
+
+" Load templates
+autocmd BufNewFile test_*.py 0r ~\_vim\templates\python\test_skeleton.py
+autocmd BufNewFile [^test]*.py 0r ~\_vim\templates\python\skeleton.py
