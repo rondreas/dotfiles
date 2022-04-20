@@ -1,5 +1,5 @@
-" Vim syntax file the High Level Shader Language
-" Language:     CG
+" Vim syntax file for Nvidia Cg
+" Language:     Cg
 " Author:       Andreas Rånman
 " Date:         April 20, 2022
 " File Types:   .cg, .cgfx
