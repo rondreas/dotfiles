@@ -26,11 +26,15 @@ syn match cgSwizzle /\.\(_[1-4]\{2}\)\{1,4\}/
 syn match cgType /vector<\s*\w\+,\s*[1-4]\s*>/
 syn keyword cgType float1 float2 float3 float4
 
+" Cg Profiles
+syn keyword cgProfile gp5 gp5tcp gp5tep gp5vp gp5gp gp5fp gp4 gp4vp gp4gp gp4fp glsl glslv glslg glslf vp40 fp40 arbfp1 arbvp1 vp30 fp30 vp20 fp20 hlsl10 hlsl11 ds_5_0 hs_5_0 vs_5_0 gs_5_0 ps_5_0 vs_4_0 gs_4_0 ps_4_0 hlslv hlslf vs_3_0 ps_3_0 vs_2_x ps_2_x vs_2_sw ps_2_sw vs_2_0 ps_2_0 vs_1_1 ps_1_3 ps_1_2 ps_1_1
+
 " Highlighting
 command -nargs=+ Highlight hi def link <args>
 Highlight cgFunc Statement
 Highlight cgType Type
 Highlight cgSwizzle SpecialChar
+Highlight cgProfile Statement
 delcommand Highlight
 
 let b:current_syntax = "cg"
