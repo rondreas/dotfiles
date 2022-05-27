@@ -7,6 +7,9 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
+set relativenumber
+set nu
+
 " Activate filetype detection, loads plugin and indent file for detected language.
 filetype plugin indent on
 
@@ -30,5 +33,5 @@ call matchadd('ColorColumn', '\%81v', 100)
 colorscheme desert 
 
 " Load templates
-autocmd BufNewFile test_*.py 0r ~\_vim\templates\python\test_skeleton.py
-autocmd BufNewFile [^test]*.py 0r ~\_vim\templates\python\skeleton.py
+autocmd BufNewFile test_*.py 0r ~\vimfiles\templates\python\test_skeleton.py
+autocmd BufNewFile [^test]*.py 0r ~\vimfiles\templates\python\skeleton.py
