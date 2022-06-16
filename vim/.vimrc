@@ -1,5 +1,6 @@
 " Vim Setting
 set nocompatible
+set noswapfile
 filetype off
 
 " Default indentation settings
