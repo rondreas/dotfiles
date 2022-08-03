@@ -34,7 +34,7 @@ call matchadd('ColorColumn', '\%81v', 100)
 colorscheme desert 
 
 " Load templates
-autocmd BufNewFile test_*.py 0r ~\vimfiles\templates\python\test_skeleton.py
-autocmd BufNewFile [^test]*.py 0r ~\vimfiles\templates\python\skeleton.py
+autocmd BufNewFile test_*.py 0r ~/vimfiles/templates/python/test_skeleton.py
+autocmd BufNewFile [^test]*.py 0r ~/vimfiles/templates/python/skeleton.py
 
 set tags=./tags;,tags;
