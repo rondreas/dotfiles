@@ -34,7 +34,20 @@ call matchadd('ColorColumn', '\%81v', 100)
 colorscheme desert 
 
 " Load templates
-autocmd BufNewFile test_*.py 0r ~/vimfiles/templates/python/test_skeleton.py
-autocmd BufNewFile [^test]*.py 0r ~/vimfiles/templates/python/skeleton.py
+if has('win32')
+  autocmd BufNewFile test_*.py 0r ~/vimfiles/templates/python/test_skeleton.py
+  autocmd BufNewFile [^test]*.py 0r ~/vimfiles/templates/python/skeleton.py
+else
+  autocmd BufNewFile test_*.py 0r ~/.vim/templates/python/test_skeleton.py
+  autocmd BufNewFile [^test]*.py 0r ~/.vim/templates/python/skeleton.py
+endif
+
+if has('python3')
+  let g:python3_host_prog='/usr/bin/python3'
+  au FileType python set omnifunc=python3complete#Complete
+endif
 
 set tags=./tags;,tags;
+
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
